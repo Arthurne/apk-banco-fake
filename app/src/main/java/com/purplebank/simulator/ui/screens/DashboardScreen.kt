@@ -88,11 +88,10 @@ fun DashboardScreen(vm: MainViewModel, onTab: (String) -> Unit, onOpen: (String)
         item {
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text("Acessos rápidos", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
                     Shortcut(Icons.Filled.AccountBalanceWallet, "Conta") { onTab("account") }
                     Shortcut(Icons.Filled.CreditCard, "Cartão") { onTab("card") }
                     Shortcut(Icons.Filled.ReceiptLong, "Extrato") { onTab("history") }
-                    Shortcut(Icons.Filled.Tune, "Editar") { onOpen("admin") }
                 }
             }
         }
