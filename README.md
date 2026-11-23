@@ -50,3 +50,13 @@ app/src/main/java/com/purplebank/simulator/
 2. Aba **Actions > Build APK** roda sozinha a cada push (ou use *Run workflow*).
 3. Ao terminar, baixe o artefato **app-debug** (contém `app-debug.apk`).
 Se o build falhar, o log mostra o erro de compilação exato.
+
+## Funções adicionadas (todas simuladas)
+- Transferência entre contatos fictícios (sem comprovante), contatos editáveis
+- Caixinhas de poupança (guardar, resgatar, editar, encerrar)
+- Pagamento de fatura total ou parcial
+- Compra no débito (sai do saldo) ou crédito (entra na fatura, respeita o limite)
+- Pedido de aumento de limite (regra fictícia: aprova até 50% acima do atual)
+- Gráfico de gastos por categoria no mês
+- O Painel do Simulador (PIN) fica na aba **Opções**
+- Atenção: o banco passou para a versão 2 e é recriado (dados fictícios voltam ao exemplo) ao atualizar o app
