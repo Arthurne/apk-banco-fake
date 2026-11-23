@@ -23,7 +23,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.purplebank.simulator.ui.Loading
 import com.purplebank.simulator.ui.MainViewModel
-import com.purplebank.simulator.ui.SimBanner
 import com.purplebank.simulator.ui.screens.*
 import com.purplebank.simulator.ui.theme.BankColors
 import com.purplebank.simulator.ui.theme.PurpleBankTheme
@@ -70,7 +69,6 @@ fun PurpleBankApp(vm: MainViewModel = viewModel()) {
         }
 
         Scaffold(
-            topBar = { SimBanner() },
             snackbarHost = { SnackbarHost(snack) },
             containerColor = MaterialTheme.colorScheme.background,
             bottomBar = {
